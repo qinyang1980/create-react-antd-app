@@ -3,8 +3,11 @@
 # dependencies
 /node_modules
 
-# vscode
-/.vscode
+# generated *.css files
+/src/**/*.css
+
+# testing
+/coverage
 
 # production
 /build

@@ -1,30 +1,40 @@
 {
-  "name": "antd-import",
+  "name": "mytsapp",
   "version": "0.1.0",
-  "description":
-    "To import ant design component with it's style ( support both JS and Typescript )",
-  "main": "index.ts",
+  "dependencies": {
+    "antd": "^2.13.7",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
   "scripts": {
-    "tsc": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "yarn run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-app-rewired start --scripts-version react-scripts-ts",
+    "build-js": "react-app-rewired build --scripts-version react-scripts-ts",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/qinyang1980/antd-import.git"
-  },
-  "keywords": ["antd", "import"],
-  "author": "qinyang_1980@qq.com",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/qinyang1980/antd-import/issues"
-  },
-  "homepage": "https://github.com/qinyang1980/antd-import#readme",
-  "dependencies": {},
   "devDependencies": {
+    "@types/jest": "^21.1.5",
     "@types/node": "^8.0.47",
     "@types/react": "^16.0.18",
     "@types/react-dom": "^16.0.2",
-    "antd": "^2.13.10",
-    "typescript": "^2.6.1"
-  }
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.1.2",
+    "react-app-rewire-less": "^2.1.0",
+    "react-app-rewired": "^1.3.5",
+    "react-scripts-ts": "^2.8.0",
+    "ts-import-plugin": "^1.4.2"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true
+  },
+  "description": "To use (create react app + typescript + antd) without eject solution.",
+  "main": "index.tsx",
+  "repository": "https://github.com/qinyang1980/create-react-app-typescript-antd-without-eject-solution.git",
+  "author": "qinyang_1980@qq.com",
+  "license": "MIT"
 }
