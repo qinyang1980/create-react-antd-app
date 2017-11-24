@@ -1,0 +1,30 @@
+{
+  "name": "antd-import",
+  "version": "0.1.0",
+  "description":
+    "To import ant design component with it's style ( support both JS and Typescript )",
+  "main": "index.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinyang1980/antd-import.git"
+  },
+  "keywords": ["antd", "import"],
+  "author": "qinyang_1980@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qinyang1980/antd-import/issues"
+  },
+  "homepage": "https://github.com/qinyang1980/antd-import#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^8.0.47",
+    "@types/react": "^16.0.18",
+    "@types/react-dom": "^16.0.2",
+    "antd": "^2.13.10",
+    "typescript": "^2.6.1"
+  }
+}
