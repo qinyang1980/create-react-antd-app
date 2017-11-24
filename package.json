@@ -1,6 +1,11 @@
 {
-  "name": "mytsapp",
+  "name": "create-react-antd-app",
+  "description": "To use (create react app + typescript + antd) without eject solution.",
   "version": "0.1.0",
+  "author": "qinyang_1980@qq.com",
+  "license": "MIT",
+  "repository": "https://github.com/qinyang1980/create-react-antd-app.git",
+  "main": "index.tsx",
   "dependencies": {
     "antd": "^2.13.7",
     "react": "^16.0.0",
@@ -31,10 +36,5 @@
   "prettier": {
     "printWidth": 120,
     "singleQuote": true
-  },
-  "description": "To use (create react app + typescript + antd) without eject solution.",
-  "main": "index.tsx",
-  "repository": "https://github.com/qinyang1980/create-react-app-typescript-antd-without-eject-solution.git",
-  "author": "qinyang_1980@qq.com",
-  "license": "MIT"
+  }
 }
